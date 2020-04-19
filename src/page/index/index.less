@@ -1,0 +1,265 @@
+@import "../../css/component/common.less";
+@import "../../css/component/layout.less";
+@import "../../css/component/navbar.less";
+@import "../../css/component/footer.less";
+@import "./animation.less";
+.main-content {
+  .page-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .page-section .page-content {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+  .page-section .page-content .page-left {
+    width: 40%;
+    max-width: 450px;
+    display: inline-block;
+    left: 0;
+    height: 100%;
+  }
+  .page-section .page-content .page-left.inverse {
+    width: 55%;
+    max-width: 770px;
+  }
+  .page-section .page-content .page-right {
+    width: 61%;
+    max-width: 770px;
+    display: inline-block;
+    right: 0;
+    height: 100%;
+  }
+  .page-section .page-content .page-right.inverse {
+    width: 55%;
+    max-width: 500px;
+  }
+  .page-section .page-content .page-right img {
+    float: right;
+  }
+  .page-section .page-title-lg {
+    font-family: PingFangSC-Regular;
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 2.29px;
+  }
+  .page-section .page-title-lg.inverse {
+    color: #333;
+
+    display: inline-flex;
+    align-items: flex-end;
+
+    .title_label_img {
+      width: 48px;
+      height: 58px;
+      margin-right: 10px;
+      position: relative;
+      top: -14px;
+    }
+  }
+
+  .page-section .content-desc {
+    font-family: PingFangSC-Regular;
+    font-size: 0.9rem;
+    color: #eaeaea;
+    letter-spacing: 0;
+    line-height: 1.8rem;
+  }
+  .page-section .content-desc.inverse {
+    color: #666;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #666666;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+  .page-section.page1 {
+    height: 499px;
+    background: #fff;
+  }
+  .page-section.page1 .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: fadeIn 0.6s linear both;
+    animation: fadeIn 0.6s linear both;
+  }
+  .page-section.page1 .page-content {
+    height: 100%;
+  }
+  .page-section .brand-desc {
+    -webkit-animation: slideUpIn 0.6s ease-in-out both;
+    animation: slideUpIn 0.6s ease-in-out both;
+  }
+  .page-section .brand-desc .title-lg {
+    font-size: 3.5rem;
+    color: #444;
+  }
+
+  .page-section .brand-desc .title-lg .title-img {
+    width: 19.2rem;
+    height: 3rem;
+  }
+
+  .page-section .brand-desc .title-sub {
+    font-size: 1.75rem;
+    color: #666;
+  }
+  .page-section .brand-desc .brand-feature {
+    -webkit-animation: fadeIn 0.3s linear both;
+    animation: fadeIn 0.3s linear both;
+    display: inline-block;
+    margin: 2rem 2rem 0 0;
+    text-align: center;
+  }
+  .page-section .brand-desc .brand-feature .icon-title {
+    font-size: 1.27rem;
+    line-height: 2.5;
+    color: #666;
+  }
+  .page-section .brand-desc .brand-feature .title-img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .page-section .brand-desc .brand-feature:nth-child(1) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  .page-section .brand-desc .brand-feature:nth-child(2) {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  .page-section .brand-desc .brand-feature:nth-child(3) {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  .page-section .brand-desc .brand-feature:nth-child(4) {
+    margin-right: 0;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+  }
+
+  .page-section.page2 {
+    height: 242px;
+    background: #3fb4fa;
+  }
+  .page-section.page2 .page-fg {
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+  .page-section.page2 .page-content {
+    height: 298px;
+  }
+  .page-section.page3 {
+    height: 480px;
+    background: #f7f7f7;
+  }
+  .page-section.page3 .page-content {
+    height: 480px;
+  }
+  .page-section.page4 {
+    height: 477px;
+  }
+  .page-section.page4 .page-content {
+    height: 477px;
+  }
+  .page-section.page4 img.img-slide {
+    position: absolute;
+    z-index: 1;
+    left: 2.5rem;
+    top: 4rem;
+    // opacity: 0;
+  }
+  .page-section.page4 img.img-slide.img1 {
+    // -webkit-animation: slideFadeInOUt 7s linear 3.5s infinite;
+    // animation: slideFadeInOUt 7s linear 3.5s infinite;
+  }
+  .page-section.page4 img.img-slide.img2 {
+    // -webkit-animation: slideFadeInOUt 7s linear 0s infinite;
+    // animation: slideFadeInOUt 7s linear 0s infinite;
+  }
+  .page-section.page5 {
+    height: 910px;
+    background-color: #eee;
+  }
+  .page-section.page5 .page-content {
+    height: 910px;
+  }
+  .page-section .page-conent-block {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 630px;
+    background: #fff;
+    padding: 2.5rem 3.75rem;
+  }
+  .page-section .exp-left-block {
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+  }
+  .page-section .exp-right-block {
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    margin-left: 120px;
+  }
+  .page-section .exp-title {
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+  .page-section .exp-desc {
+    font-size: 0.9rem;
+    line-height: 2.44;
+    color: #666;
+    text-align: justify;
+  }
+  .page-section .exp-kpi {
+    margin-top: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .page-section .exp-kpi-li {
+    -webkit-animation: fadeIn 0.3s linear both;
+    animation: fadeIn 0.3s linear both;
+    display: inline-block;
+    text-align: center;
+    width: 112px;
+  }
+  .page-section .exp-kpi-li .icon-title {
+    font-size: 0.7rem;
+    line-height: 2.5;
+    color: #999;
+  }
+  .page-section .exp-kpi-li:nth-child(1) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  .page-section .exp-kpi-li:nth-child(2) {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  .page-section .exp-kpi-li:nth-child(3) {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+}
+
+@import "./index750.less";
+@import "./index1200.less";

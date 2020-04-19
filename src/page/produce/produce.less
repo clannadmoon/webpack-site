@@ -1,0 +1,362 @@
+@import "../../css/component/common.less";
+@import "../../css/component/layout.less";
+@import "../../css/component/navbar.less";
+@import "../../css/component/footer.less";
+@import "./animation.less";
+.banner-block {
+  height: 17rem;
+  width: 100%;
+  position: relative;
+  // background-color: rgba(0, 0, 0, 0.349);
+  // transform: scaleX(-1);
+  background-image: linear-gradient(90deg, #525252 0%, rgba(0, 0, 0, 0.46) 99%);
+}
+.slide-li {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.slide-li .img {
+  width: 100%;
+  height: 100%;
+}
+.slide-li.slideLeftIn .img {
+  -webkit-animation: slideLeftIn 0.5s ease-in-out both;
+  animation: slideLeftIn 0.5s ease-in-out both;
+}
+.slide-li.slideRightIn .img {
+  -webkit-animation: slideRightIn 0.5s ease-in-out both;
+  animation: slideRightIn 0.5s ease-in-out both;
+}
+.slide-mask {
+  background-color: #000;
+  opacity: 0.349;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.slide-content {
+  z-index: 3;
+  width: 100%;
+  -webkit-animation: fadeIn 0.8s ease-in-out both;
+  animation: fadeIn 0.8s ease-in-out both;
+}
+.content-title-lg {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #fff;
+}
+.content-desc p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.851);
+  line-height: 1.8rem;
+  text-align: center;
+  -webkit-animation: fadeIn 0.8s ease-in-out both;
+  animation: fadeIn 0.8s ease-in-out both;
+}
+.slide-tab-wrap {
+  background-color: #fff;
+  height: 2.5rem;
+  width: center;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #ececec;
+}
+.slide-tab {
+  display: inline-block;
+}
+.slide-tab-li {
+  display: inline-block;
+  line-height: 2.5rem;
+  margin: 0 2rem;
+  font-size: 1rem;
+  color: #333;
+  position: relative;
+  cursor: pointer;
+}
+.slide-tab-li.active,
+.slide-tab-li:hover {
+  color: #3fb4fa;
+}
+.slide-tab-li .after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  border-bottom: 4px solid #3fb4fa;
+  border-radius: 2px;
+}
+.slide-tab-li.active .after {
+  opacity: 1;
+}
+.slide-tab-li.active .after {
+  -webkit-animation: rotateIn 0.3s ease-in both;
+  animation: rotateIn 0.3s ease-in both;
+}
+.tab-content {
+  width: 100%;
+  position: relative;
+  -webkit-animation: fadeIn 0.4s ease-in-out both;
+  animation: fadeIn 0.4s ease-in-out both;
+}
+
+.sub-banner-li-wrap {
+  width: 100%;
+  height: 25.85rem;
+  background-color: #f7f7f7;
+}
+.sub-banner-li-wrap.inverse {
+  background-color: #f0f0f0;
+}
+
+.sub-banner-li-wrap .sub-banner-li {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.sub-banner-li-wrap .phone-preview-block {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 26.4rem;
+  height: 100%;
+  //overflow: hidden;
+}
+.sub-banner-li-wrap.inverse .phone-preview-block {
+  right: initial;
+  left: 1rem;
+}
+.sub-banner-li-wrap .phone-outline {
+  width: 100%;
+  height: 100%;
+  // background: url(assets/img/icon-phone.png) no-repeat center top;
+  background-size: 100%;
+}
+.sub-banner-li-wrap .phone-content {
+  position: absolute;
+  width: 14.4rem;
+  height: auto;
+  left: 6.05rem;
+  top: 7.6rem;
+  opacity: 0.75;
+}
+.sub-banner-li-wrap .phone-content img {
+  width: 100%;
+}
+.sub-banner-li-wrap .phone-special-show {
+  position: absolute;
+  opacity: 0;
+}
+.sub-banner-li-wrap .phone-special-show img {
+  width: 100%;
+}
+.sub-banner-li-wrap.animated .phoneBgGray {
+  -webkit-animation: phoneBgGray 0.2s ease-out both;
+  animation: phoneBgGray 0.2s ease-out both;
+}
+.sub-banner-li-wrap.animated .adSlideOut {
+  -webkit-animation: adSlideOut 0.5s ease-in-out 0.15s both;
+  animation: adSlideOut 0.5s ease-in-out 0.15s both;
+}
+.sub-banner-li-wrap.animated .adSlideOutRight {
+  -webkit-animation: adSlideOutRight 0.5s ease-in-out 0.15s both;
+  animation: adSlideOutRight 0.5s ease-in-out 0.15s both;
+}
+.sub-banner-li-wrap.animated .adSlideOutLeft {
+  -webkit-animation: adSlideOutLeft 0.5s ease-in-out 0.15s both;
+  animation: adSlideOutLeft 0.5s ease-in-out 0.15s both;
+}
+.sub-banner-li-wrap.animated .adSlideOutRightLg {
+  -webkit-animation: adSlideOutRightLg 0.5s ease-in-out 0.15s both;
+  animation: adSlideOutRightLg 0.5s ease-in-out 0.15s both;
+}
+.sub-banner-li-wrap.animated .adSlideOutLeftLg {
+  -webkit-animation: adSlideOutLeftLg 0.5s ease-in-out 0.15s both;
+  animation: adSlideOutLeftLg 0.5s ease-in-out 0.15s both;
+}
+.sub-banner-li-wrap.animated .adFadeIn {
+  -webkit-animation: adFadeIn 0.5s ease-in-out 0.15s both;
+  animation: adFadeIn 0.5s ease-in-out 0.15s both;
+}
+.sub-banner-li-wrap.animated .adSlideInUp {
+  -webkit-animation: adSlideInUp 0.5s ease-in-out 0.15s both;
+  animation: adSlideInUp 0.5s ease-in-out 0.15s both;
+}
+.sub-banner-li-wrap.done-animate.animated .phoneBgGray {
+  -webkit-animation: none;
+  animation: none;
+  opacity: 0.25;
+}
+.sub-banner-li-wrap.done-animate.animated .adSlideOut {
+  -webkit-animation: none;
+  animation: none;
+  opacity: 1;
+}
+.sub-banner-li-wrap.done-animate.animated .adSlideOutRight {
+  -webkit-animation: none;
+  animation: none;
+}
+.sub-banner-li-wrap.done-animate.animated .adSlideOutLeft {
+  -webkit-animation: none;
+  animation: none;
+}
+.sub-banner-li-wrap.done-animate.animated .adSlideOutRightLg {
+  -webkit-animation: none;
+  animation: none;
+}
+.sub-banner-li-wrap.done-animate.animated .adSlideOutLeftLg {
+  -webkit-animation: none;
+  animation: none;
+}
+.sub-banner-li-wrap.done-animate.animated .adFadeIn {
+  -webkit-animation: none;
+  animation: none;
+}
+.sub-banner-li-wrap.done-animate.animated .adSlideInUp {
+  -webkit-animation: none;
+  animation: none;
+}
+.sub-banner-li-wrap .ad-desc-block {
+  display: inline-block;
+  width: 18rem;
+  left: 6rem;
+}
+
+.sub-banner-li-wrap .ad-desc-block-left-add {
+  left: 0;
+}
+.sub-banner-li-wrap .ad-desc-title {
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 1.308;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.sub-banner-li-wrap .ad-desc-content {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.sub-banner-li-wrap .ad-desc-content-2 {
+  width: 25rem;
+}
+
+.sub-banner-li-wrap.inverse .ad-desc-block {
+  left: 37rem;
+}
+.sub-banner-li-wrap.inverse .ad-desc-block-add {
+  width: 26rem;
+}
+
+.sub-banner-li-wrap .ad-desc-block-add {
+  width: 26rem;
+}
+
+.phone-slide-tab {
+  display: inline-block;
+  position: absolute;
+  bottom: 0.5rem;
+  text-align: center;
+  width: 100%;
+  z-index: 1001;
+}
+.phone-slide-tab .tab-icon {
+  content: "";
+  display: inline-block;
+  margin: 0 0.3rem;
+  height: 0.15rem;
+  width: 0.6rem;
+  cursor: pointer;
+  position: relative;
+  background-color: #bbb;
+}
+.phone-slide-tab .tab-icon.active {
+  background-color: #8679e8;
+}
+.phone-slide-tab .tab-icon .after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  background: 0 0;
+  top: -0.2rem;
+  left: -0.2rem;
+  width: 1rem;
+  height: 0.55rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/****
+**修改的样式
+*****/
+.gradient1 {
+  background: linear-gradient(to bottom, #fcfcfc 0%, #efefef 100%);
+}
+.gradient2 {
+  background: linear-gradient(to bottom, #fcfcfc 0%, #e5e5e5 100%);
+}
+
+.gradient2-1 {
+  opacity: 0.7;
+  background-image: linear-gradient(
+    180deg,
+    rgba(252, 252, 252, 0) 63%,
+    rgba(229, 229, 229, 0.9) 100%
+  );
+}
+
+.gradient2-2 {
+  background-image: linear-gradient(
+    180deg,
+    rgba(252, 252, 252, 0) 62%,
+    #efefef 100%
+  );
+}
+
+.gradient2-3 {
+  background: #ffffff;
+}
+//width: 14.4rem;
+//left: 6.05rem;
+.phone-content-img-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  #produce-1-1-img {
+    position: absolute;
+    right: -6rem;
+    top: -5rem;
+    width: 30.85rem;
+    height: 20.6rem;
+  }
+
+  #produce-1-2-img {
+    position: absolute;
+    left: -5.5rem;
+    top: -5rem;
+    width: 26.1rem;
+    height: 21.6rem;
+  }
+
+  #produce-1-3-img {
+    position: absolute;
+    left: -13rem;
+    top: -1rem;
+    width: 32.6rem;
+    height: 12.95rem;
+  }
+}
+
+@import "./produce1200.less";
+@import "./produce750.less";

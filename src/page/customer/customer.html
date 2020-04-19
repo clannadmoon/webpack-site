@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--引入通用的Head部分-->
+    <%=require('html-withimg-loader!../../html/tpl/head.html')%>
+  </head>
+
+  <body>
+    <!--引入通用的导航部分-->
+    <%=require('html-withimg-loader!../../html/tpl/navbar3.html')%>
+
+    <!--页面的正式内容在这里-->
+
+    <div class="main-content">
+      <div class="banner-block">
+        <div class="img">
+          <img
+            class="v-center h-center"
+            src="https://e.vip.com/assets/img/flying.jpg"
+          />
+        </div>
+        <div class="slide-mask"></div>
+        <div class="slide-content v-center h-center">
+          <div class="content-title-lg">用户洞察</div>
+          <div class="content-desc">
+            <p>
+              通过在多渠道采集用户行为数据，分析用户偏好，构建体系化用户标签集，输出精准、丰满的用户画像，为精细化运
+            </p>
+            <p>
+              营和精准营销夯实基础实力。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-block">
+        <div class="feature-list">
+          <div class="feature-li-content1">
+            <div class="feature-li">
+              <div class="feature-text-block">
+                <!-- <div class="bg-shadow"></div> -->
+                <div class="feature-text-content-block">
+                  <div class="feature-box">
+                    <div class="feature-title">丰富用户画像</div>
+                    <div class="feature-desc">
+                      利用大数据、AI等新技术，对2000万个人用户、700万家庭用户在北京移动大小屏收视中产生的海量数据进行深入建模分析，对用户属性、行为特征进行标签化识别，并不断对用户标签体系进行优化迭代，完善用户标签，目前累计已经输出**个用户标签，**个维度分析模型。
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-img-block">
+                <div class="feature-img">
+                  <img src="${require('../../img/customer/customer-1.png')}" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-li-content2">
+            <div class="feature-li inverse">
+              <div class="feature-text-block">
+                <div
+                  class="feature-text-content-block feature-text-content-block-right"
+                >
+                  <div class="feature-box">
+                    <div class="feature-title">
+                      定制用户行为报告
+                    </div>
+                    <div class="feature-desc">
+                      为合作方出具用户行为洞察报告，协助内容方及时根据市场和用户需求的变化调整业务重心、优化营销策略、优选目标受众，最大化市场影响力。
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-img-block">
+                <div class="feature-img feature-img-left">
+                  <img src="${require('../../img/customer/customer-2.png')}" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--引入通用的底部栏-->
+    <%=require('html-withimg-loader!../../html/tpl/footer.html')%>
+
+    <script>
+      $(function () {
+        function n() {
+          var n = $(document).scrollTop(),
+            c = [];
+          e.each(function (o, t) {
+            ((t + 100 < n + i && n > 0) || (0 == n && 0 == o)) && c.push(o);
+          }),
+            (!u || n + i > $(document).outerHeight() - 50) &&
+              ((u = !0),
+              c.forEach(function (n, o) {
+                $(t[n]).addClass("animated");
+              })),
+            (o = setTimeout(function () {
+              u = !1;
+            }, 200));
+        }
+        var o,
+          t = $(".feature-block .feature-li"),
+          e = t.map(function (n, o) {
+            return $(o).offset().top;
+          }),
+          i = $(window).height(),
+          u = !1;
+        $(document).scroll(function () {
+          n();
+        }),
+          $(window).on("resize", function () {
+            (i = $(window).height()), n();
+          }),
+          n();
+      });
+    </script>
+  </body>
+</html>

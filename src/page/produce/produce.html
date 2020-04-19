@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--引入通用的Head部分-->
+    <%=require('html-withimg-loader!../../html/tpl/head.html')%>
+  </head>
+
+  <body>
+    <!--引入通用的导航部分-->
+    <%=require('html-withimg-loader!../../html/tpl/navbar2.html')%>
+
+    <!--页面的正式内容在这里-->
+    <div class="main-content">
+      <div class="banner-block">
+        <div class="slide-li site">
+          <div class="img">
+            <img
+              class="v-center h-center"
+              src="${require('../../img/produce/banner1.png')}"
+            />
+          </div>
+          <div class="slide-mask"></div>
+          <div class="slide-content v-center h-center">
+            <div class="content-title-lg">聚焦魔百和</div>
+            <div class="content-desc">
+              <p>
+                与多家优秀内容提供商展开合作，搭建以内容为核心、以丰富的第三方APK为抓手的视频播放平台。通过
+              </p>
+              <p>
+                引入海量优质资源和提供高品质用户体验，增强用户黏性，为合作方提供可持续发展能力。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slide-li mobile hidden">
+          <div class="img">
+            <img
+              class="h-center v-center"
+              src="${require('../../img/produce/banner2.png')}"
+            />
+          </div>
+          <div class="slide-mask"></div>
+          <div class="slide-content v-center h-center">
+            <div class="content-title-lg">多渠道触达</div>
+            <div class="content-desc">
+              <p>
+                除魔百和外，能够为合作方提供移动掌上营业厅、咪咕视频、北京移动互联网电视公众号、北京移动公众号、梦网
+              </p>
+              <p>
+                短信等多个渠道，最大限度地帮助合作方实现内容的多渠道组合营销，并结合用户偏好洞察，用更轻量级、趣味性
+              </p>
+              <p>的内容吸引潜在用户。</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide-li tencent hidden">
+          <div class="img">
+            <img
+              class="h-center v-center"
+              src="${require('../../img/produce/banner3.png')}"
+            />
+          </div>
+          <div class="slide-mask"></div>
+          <div class="slide-content v-center h-center">
+            <div class="content-title-lg">整合优势能力</div>
+            <div class="content-desc">
+              <p>
+                依托强大的自主通信网络优势和庞大的用户体量，将通信行业和合作伙伴的内容行业进行深度融合，充分发挥5G网络、超高清技术和
+              </p>
+              <p>
+                平台能力优势，协助合作伙伴丰富产品形态、快速扩张高清视频业务优势，为合作伙伴创造更多的收入和用户。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-tab-wrap">
+        <div class="slide-tab">
+          <div class="slide-tab-li active" tab-name="site" tab-order-idx="0">
+            <div class="tab-title">聚焦魔百和</div>
+            <div class="after"></div>
+          </div>
+          <div class="slide-tab-li" tab-name="mobile" tab-order-idx="1">
+            <div class="tab-title">多渠道触达</div>
+            <div class="after"></div>
+          </div>
+          <div class="slide-tab-li" tab-name="tencent" tab-order-idx="2">
+            <div class="tab-title">整合优势能力</div>
+            <div class="after"></div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content site">
+        <div class="sub-banner-li-wrap gradient1">
+          <div class="sub-banner-li not-animation">
+            <div class="ad-desc-block v-center" style="left: 0; width: 22rem;">
+              <div class="ad-desc-title">持续丰富内容领域</div>
+              <div class="ad-desc-content" style="max-width: 500px;">
+                <p>
+                  引入腾讯、爱奇艺、优酷、百事通、芒果TV等20多家合作伙伴累计价值约2.3亿的优质资源，并在2020年继续完善教育、少儿、体育、游戏等热点内容领域，丰富第三方应用，满足存量用户需求、吸引潜在用户，提升用户体量。
+                </p>
+              </div>
+            </div>
+            <div class="phone-preview-block" style="overflow: visible;">
+              <div class="phone-outline"></div>
+              <div class="phone-content" style="right: 0; opacity: 1;">
+                <div class="phone-content-img-box">
+                  <img
+                    id="produce-1-1-img"
+                    src="${require('../../img/produce/produce-1-1.png')}"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-banner-li-wrap inverse gradient2">
+          <div class="sub-banner-li">
+            <div class="ad-desc-block v-center ad-desc-block-add">
+              <div class="ad-desc-title">深耕家庭市场</div>
+              <div class="ad-desc-content">
+                <p>
+                  基于2000万北京移动个人用户关系网，实现互联网电视直接可触达用户向家庭用户及关联用户的广泛拓展，并通过大屏小屏权益融合包、“一人付费多人看”等家庭产品形态，促进以手机号为中心的家庭入口经营，逐步赢得家庭市场的战略优势地位。
+                </p>
+              </div>
+            </div>
+            <div class="phone-preview-block" style="left: 0;">
+              <div class="phone-outline"></div>
+              <div class="phone-content" style="opacity: 1;">
+                <div class="phone-content-img-box">
+                  <img
+                    id="produce-1-2-img"
+                    src="${require('../../img/produce/produce-1-2.png')}"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-banner-li-wrap gradient1">
+          <div class="sub-banner-li">
+            <div
+              class="ad-desc-block v-center ad-desc-block-left-add ad-desc-block-add"
+            >
+              <div class="ad-desc-title">黄金营销位，超强曝光率</div>
+              <div class="ad-desc-content" style="max-width: 460px;">
+                <p>
+                  向合作方提供魔百和首屏及各频道的焦点运营位，方便合作方在高曝光率的黄金运营位置投放营销资源，通过高曝光率吸引用户注意力，提内容点播率或付费转化率。
+                </p>
+              </div>
+            </div>
+            <div class="phone-preview-block">
+              <div class="phone-outline"></div>
+              <div class="phone-content" style="opacity: 1;">
+                <div class="phone-content-img-box">
+                  <img
+                    id="produce-1-3-img"
+                    src="${require('../../img/produce/produce-1-3.png')}"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content mobile hidden">
+        <div class="sub-banner-li-wrap inverse gradient2-1">
+          <div class="sub-banner-li">
+            <div class="ad-desc-block v-center">
+              <div class="ad-desc-title">移动官方手机营业厅</div>
+              <div class="ad-desc-content ad-desc-content-2">
+                <p>
+                  在北京移动掌上营业厅APP专属运营位投放合作方宣推资料，利用焦点位置的突出推荐，延长用户关注时长，随时随地对触达目标用户。
+                </p>
+              </div>
+            </div>
+            <div class="phone-preview-block">
+              <div class="phone-outline"></div>
+              <div class="phone-content phoneBgGray">
+                <img src="https://e.vip.com/assets/img/tencent/1-1.png" />
+              </div>
+              <div
+                class="phone-special-show adSlideOutRight"
+                style="
+                  box-shadow: -5px 0 100px 0px rgba(118, 118, 118, 0.12);
+                  left: 5.9rem;
+                  top: 20.1rem;
+                  width: 15.3rem;
+                  transform: scale(0.84, 0.84);
+                "
+              >
+                <img src="https://e.vip.com/assets/img/tencent/1-2.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-banner-li-wrap gradient2-2">
+          <div class="sub-banner-li">
+            <div class="ad-desc-block v-center">
+              <div class="ad-desc-title">微信公众号推送</div>
+              <div class="ad-desc-content" style="width: 27rem;">
+                <p>
+                  充分利用微信公众号生态能力，结合用户偏好，将合作方的优质资源精准送达潜在受众，获得用户自然、主动的关注，培养用户黏性和兴趣度。
+                </p>
+              </div>
+            </div>
+            <div class="phone-preview-block">
+              <div class="phone-outline"></div>
+              <div class="phone-content phoneBgGray">
+                <img src="https://e.vip.com/assets/img/tencent/1-1.png" />
+              </div>
+              <div
+                class="phone-special-show adSlideOutRight"
+                style="
+                  box-shadow: -5px 0 100px 0px rgba(118, 118, 118, 0.12);
+                  left: 5.9rem;
+                  top: 20.1rem;
+                  width: 15.3rem;
+                  transform: scale(0.84, 0.84);
+                "
+              >
+                <img src="https://e.vip.com/assets/img/tencent/1-2.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-banner-li-wrap inverse" style="background: #ffffff;">
+          <div class="sub-banner-li">
+            <div class="ad-desc-block v-center">
+              <div class="ad-desc-title">梦网短信营销</div>
+              <div class="ad-desc-content" style="width: 27rem;">
+                <p>
+                  打通大小屏产品短信营销通路，根据用户收视行为和用户需求分析，结合推送内容，实现向特定目标人群在最佳时段推送营销文案，实现更广泛、更精细化的渠道触达。
+                </p>
+              </div>
+            </div>
+            <div class="phone-preview-block">
+              <div class="phone-outline"></div>
+              <div class="phone-content phoneBgGray">
+                <img src="https://e.vip.com/assets/img/tencent/1-1.png" />
+              </div>
+              <div
+                class="phone-special-show adSlideOutRight"
+                style="
+                  box-shadow: -5px 0 100px 0px rgba(118, 118, 118, 0.12);
+                  left: 5.9rem;
+                  top: 20.1rem;
+                  width: 15.3rem;
+                  transform: scale(0.84, 0.84);
+                "
+              >
+                <img src="https://e.vip.com/assets/img/tencent/1-2.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content tencent hidden">
+        <div class="sub-banner-li-wrap">
+          <div class="sub-banner-li">
+            <div class="ad-desc-block v-center">
+              <div class="ad-desc-title">微信公众号</div>
+              <div class="ad-desc-content">
+                <p>
+                  微信公众号广告是基于微信公众号生态体系，以文章内容的形式出现在公众号文章中，支持多维度组合定向投放，实现高效率转化
+                </p>
+                <p>计费方式：CPM、CPC</p>
+              </div>
+            </div>
+            <div class="phone-preview-block">
+              <div class="phone-outline"></div>
+              <div class="phone-content phoneBgGray">
+                <img src="https://e.vip.com/assets/img/tencent/1-1.png" />
+              </div>
+              <div
+                class="phone-special-show adSlideOutRight"
+                style="
+                  box-shadow: -5px 0 100px 0px rgba(118, 118, 118, 0.12);
+                  left: 5.9rem;
+                  top: 20.1rem;
+                  width: 15.3rem;
+                  transform: scale(0.84, 0.84);
+                "
+              >
+                <img src="https://e.vip.com/assets/img/tencent/1-2.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-banner-li-wrap inverse">
+          <div class="sub-banner-li">
+            <div class="ad-desc-block v-center">
+              <div class="ad-desc-title">QQ空间</div>
+              <div class="ad-desc-content">
+                <p>
+                  QQ空间拥有活跃账户5.68亿，6成以上的用户为90后年轻用户。QQ空间信息流广告出现在用户的好友动态中，是一种融入在用户UGC中的原生社交广告，拥有用户天然、无违和感的关注，非常适合品牌在社交场景与年轻人沟通
+                </p>
+                <p>计费方式：CPM、CPC</p>
+              </div>
+            </div>
+            <div class="phone-preview-block">
+              <div class="phone-outline"></div>
+              <div class="phone-content phoneBgGray">
+                <img src="https://e.vip.com/assets/img/tencent/2-1.png" />
+              </div>
+              <div
+                class="phone-special-show adSlideOutLeft"
+                style="
+                  box-shadow: 5px 0 100px 0px rgba(118, 118, 118, 0.12);
+                  left: 5.35rem;
+                  top: 12.1rem;
+                  width: 15.4rem;
+                  transform: scale(0.9, 0.9);
+                "
+              >
+                <img src="https://e.vip.com/assets/img/tencent/2-2.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-banner-li-wrap">
+          <div class="sub-banner-li">
+            <div class="ad-desc-block v-center">
+              <div class="ad-desc-title">腾讯视频</div>
+              <div class="ad-desc-content">
+                <p>
+                  腾讯视频是国内移动视频领域第一入口，月活超过5亿，且用户在线时间长。腾讯视频广告正是以原生形式出现在娱乐化流量场景中，通过定向技术精准触达用户，潜移默化地影响用户对品牌的感知
+                </p>
+                <p>计费方式：CPM、CPC</p>
+              </div>
+            </div>
+            <div class="phone-preview-block">
+              <div class="phone-outline"></div>
+              <div class="phone-content phoneBgGray">
+                <img src="https://e.vip.com/assets/img/tencent/3-1.png" />
+              </div>
+              <div
+                class="phone-special-show adSlideOutRight"
+                style="
+                  box-shadow: -5px 0 100px 0px rgba(118, 118, 118, 0.12);
+                  left: 5.15rem;
+                  top: 18.7rem;
+                  width: 15.3rem;
+                  transform: scale(0.87, 0.87);
+                "
+              >
+                <img src="https://e.vip.com/assets/img/tencent/3-2.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-banner-li-wrap inverse">
+          <div class="sub-banner-li">
+            <div class="ad-desc-block v-center">
+              <div class="ad-desc-title">腾讯新闻</div>
+              <div class="ad-desc-content">
+                <p>
+                  腾讯新闻是一款主打“事实派”的资讯类APP，月活超过2.4亿，且用户具备深度浏览习惯。腾讯新闻广告正是以原生方式出现在资讯信息流中，根据用户属性、历史浏览行为和兴趣爱好进行精准定向投放。目前支持网页推广、移动应用推广和电商推广
+                </p>
+                <p>计费方式：CPM、CPC</p>
+              </div>
+            </div>
+            <div class="phone-preview-block">
+              <div class="phone-outline"></div>
+              <div class="phone-content phoneBgGray">
+                <img src="https://e.vip.com/assets/img/tencent/4-1.png" />
+              </div>
+              <div
+                class="phone-special-show adSlideOutLeft"
+                style="
+                  box-shadow: 5px 0 100px 0px rgba(118, 118, 118, 0.12);
+                  left: 5.15rem;
+                  top: 14.25rem;
+                  width: 18.5rem;
+                  transform: scale(0.9, 0.9);
+                "
+              >
+                <img src="https://e.vip.com/assets/img/tencent/4-2.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--引入通用的底部栏-->
+    <%=require('html-withimg-loader!../../html/tpl/footer.html')%>
+
+    <script src="./produce.js"></script>
+  </body>
+</html>

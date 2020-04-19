@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--引入通用的Head部分-->
+    <%=require('html-withimg-loader!../../html/tpl/head.html')%>
+  </head>
+  <body>
+    <!--引入通用的导航部分-->
+    <%=require('html-withimg-loader!../../html/tpl/navbar1.html')%>
+
+    <!--页面的正式内容在这里-->
+    <div class="main-content">
+      <section class="page-section page1">
+        <div class="bg-img">
+          <img
+            class="h-center"
+            src="${require('../../img/index/banner.png')}"
+            style="width: auto; height: 100%;"
+          />
+        </div>
+        <div class="page-content">
+          <div class="brand-desc v-center">
+            <div class="title-lg">
+              <img
+                class="title-img"
+                src="${require('../../img/index/icon_banner_title.png')}"
+              />
+            </div>
+            <div class="title-sub">智能营销解决方案</div>
+            <!-- <div class="title-lg">
+              <img src="./img/icon_序号2.png" />
+            </div> -->
+            <!-- <div class="title-sub">智能营销解决方案</div> -->
+            <div class="brand-detail">
+              <div class="brand-feature">
+                <div class="icon">
+                  <img
+                    class="title-img"
+                    src="${require('../../img/index/icon_banner1.png')}"
+                  />
+                </div>
+                <div class="icon-title">品牌触达</div>
+              </div>
+              <div class="brand-feature">
+                <div class="icon">
+                  <img
+                    class="title-img"
+                    src="${require('../../img/index/icon_banner2.png')}"
+                  />
+                </div>
+                <div class="icon-title">精准曝光</div>
+              </div>
+              <div class="brand-feature">
+                <div class="icon">
+                  <img
+                    class="title-img"
+                    src="${require('../../img/index/icon_banner3.png')}"
+                  />
+                </div>
+                <div class="icon-title">社交电商</div>
+              </div>
+              <div class="brand-feature">
+                <div class="icon">
+                  <img
+                    class="title-img"
+                    src="${require('../../img/index/icon_banner4.png')}"
+                  />
+                </div>
+                <div class="icon-title">内容种草</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-section page2">
+        <div class="page-content">
+          <div class="page-fg v-center h-center" style="text-align: center;">
+            <div class="page-title-lg" style="margin: 2.5rem 0 0.5rem 0;">
+              深度数据洞察与精准营销
+            </div>
+            <div class="content-desc">
+              <p>
+                依托北京移动强大的数据支撑、用户洞察体系以及渠道优势，为合同方提供精细化的数据策略分析，实现智能投放、精准营销。
+              </p>
+              <p>
+                为合作方运营人员提供标准化、简洁化的物料管理、物料营销流程，增强合作方与移动内部运营人员的协同工作效率，实现高效合作运营模式
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-section page3">
+        <div class="page-content">
+          <div class="page-left v-center">
+            <div class="page-desc v-center">
+              <div class="page-title-lg inverse" style="margin: 1rem 0;">
+                <img
+                  class="title_label_img"
+                  src="${require('../../img/index/icon_label1.png')}"
+                />
+                <span> 全链路数据可视化</span>
+              </div>
+              <div class="content-desc inverse" style="text-align: justify;">
+                基于魔百和2000万个人用户、700万家庭用户数据，以及汇聚用户在其他移动产品的用户行为数据，构建立体、多维的用户画像，并充分应用于售前营销、售中使用、订购等环节，实现全链路的数据可视化追踪分析。
+              </div>
+            </div>
+          </div>
+          <div class="page-right v-center">
+            <img
+              src="${require('../../img/index/index_label1.png')}"
+              style="
+                margin-top: 3rem;
+                margin-right: 5rem;
+                width: 377px;
+                height: 392px;
+              "
+            />
+          </div>
+        </div>
+      </section>
+      <section class="page-section page4">
+        <div class="page-content">
+          <div class="page-left inverse">
+            <img
+              class="img-slide img1"
+              src="${require('../../img/index/index_label2.png')}"
+              style="width: 440px; height: 326px;"
+            />
+            <!-- <img
+              class="img-slide img2"
+              src="${require('../../img/index/index_label2.png')}"
+            /> -->
+          </div>
+          <div class="page-right inverse v-center">
+            <div class="page-desc" style="margin-top: 4rem;">
+              <div class="page-title-lg inverse" style="margin: 1rem 0;">
+                <img
+                  class="title_label_img"
+                  src="${require('../../img/index/icon_label2.png')}"
+                />
+                <span> 精准营销与合作赋能</span>
+              </div>
+              <div class="content-desc inverse" style="text-align: justify;">
+                基于用户画像和智能推荐算法，引入优质内容并与用户兴趣进行最佳适配，实现千人千面的精准营销。为合作方提供多维用户行为分析，帮助合作方提升运营转化率，实现共创世界、共赢世界。
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-section page6"></section>
+    </div>
+
+    <!--引入通用的底部栏-->
+    <%=require('html-withimg-loader!../../html/tpl/footer.html')%>
+  </body>
+</html>
