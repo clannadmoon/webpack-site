@@ -40,7 +40,10 @@ function newHtmlWebpackPlugins() {
       new HtmlWebpackPlugin({
         filename: filename,
         template: filePath,
-        chunks: [filename_no_extension]
+        chunks: [filename_no_extension],
+        minify: {
+          collapseWhitespace: true //删除空格、换行
+        }
       })
     );
   }
@@ -51,8 +54,9 @@ function newHtmlWebpackPlugins() {
 module.exports = {
   entry: entries(),
   output: {
-    filename: "[name].[hash].js",
-    path: path.resolve(__dirname, "../dist")
+    path: path.resolve(__dirname, "../dist"),
+    filename: "[name].[hash:8].js",
+    chunkFilename: "[name].chunk.js"
   },
 
   module: {
@@ -96,7 +100,44 @@ module.exports = {
       },
       {
         test: /\.(jpg|jpeg|png|svg|gif)$/,
-        use: ["url-loader?limit=8192&name=images/[name].[hash:8].[ext]"]
+        // use: ["url-loader?limit=8192&name=images/[name].[hash:8].[ext]"]
+        use: [
+          {
+            loader: "url-loader",
+            // loader: 'file-loader',
+            options: {
+              esModule: false, // 这里设置为false
+              name: "images/[name].[hash:8].[ext]",
+              limit: 10240
+            }
+          },
+          {
+            loader: "image-webpack-loader",
+            options: {
+              //bypassOnDebug: true, // webpack@1.x
+              disable: true, // webpack@2.x and newer
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              // optipng.enabled: false will disable optipng
+              optipng: {
+                enabled: false
+              },
+              pngquant: {
+                quality: [0.65, 0.9],
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false
+              },
+              // the webp option will enable WEBP
+              webp: {
+                quality: 75
+              }
+            }
+          }
+        ]
       }
     ]
   },

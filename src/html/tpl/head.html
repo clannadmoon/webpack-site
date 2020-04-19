@@ -11,20 +11,3 @@
 />
 
 <title>北京移动视频开放运营平台</title>
-<script>
-  function setRootFontSize() {
-    var t,
-      e = document.documentElement.clientWidth;
-    e > 750 ? (t = "120%") : (e > 540 && (e = 540), (t = e / 27 + "px")),
-      (document.getElementsByTagName("html")[0].style["font-size"] = t),
-      (window.wapParams = { rootFontSize: t, clientWidth: e });
-  }
-  setRootFontSize(),
-    window.addEventListener(
-      "resize",
-      function () {
-        setRootFontSize();
-      },
-      !1
-    );
-</script>
