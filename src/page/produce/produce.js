@@ -104,6 +104,25 @@ $(function () {
           o.trigger("click");
       }
     });
+
+  $("#myVideoBox").on("click", function () {
+    var videoElement = document.getElementById("myVideo");
+    console.log(videoElement);
+    videoElement.play();
+    $("#videoImg").addClass("playVideoImg-0");
+  });
+  var video = document.getElementById("myVideo");
+  video.addEventListener(
+    "ended",
+    function () {
+      const videoSrc = video.currentSrc;
+
+      video.src = "";
+      video.src =
+        "http://mgcdn.vod.migucloud.com/vi1/1904.2Z8tZqtqNc3W16tp9j9sSb.4.fZTZYz.mp4";
+    },
+    false
+  );
 });
 
 $(function () {

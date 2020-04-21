@@ -269,7 +269,7 @@
       <div class="tab-content tencent hidden">
         <div class="feature-block">
           <div class="feature-list">
-            <!-- <div class="sub-banner-li-wrap gradient2-2">
+            <div class="sub-banner-li-wrap gradient2-2">
               <div class="sub-banner-li">
                 <div class="ad-desc-block v-center" style="left: 0;">
                   <div class="ad-desc-title">5G网络支持</div>
@@ -290,25 +290,32 @@
                     class="phone-special-show adSlideOutLeft"
                     style="
                       box-shadow: -5px 0 100px 0px rgba(118, 118, 118, 0.12);
-                      left: 1rem;
-                      top: 19rem;
-                      width: 14rem;
-                      transform: scale(0.84, 0.84);
+                      left: 0.5rem;
+                      top: 10rem;
+                      width: 19.55rem;
+                      height: 9.8rem;
+                      transform: scale(0.84, 0.84); 
                     "
                   >
-                  <div>
-
-                  </div style="background:red">
-                    <img
-                      src="${require('../../img/produce/produce-3-1.png')}"
-                    />
+                  <div id="myVideoBox">
+                   <!-- <img
+                   id="videoImg"
+                    class="playVideoImg"
+                      src="${require('../../img/produce/produce-3-1-1.png')}"
+                    /> -->
+                    <video id="myVideo" class="playVideo"  poster="${require('../../img/produce/produce-3-1-1.png')}">
+                        <source src="http://mgcdn.vod.migucloud.com/vi1/1904.2Z8tZqtqNc3W16tp9j9sSb.4.fZTZYz.mp4" type="video/mp4">
+                    </video>
+                    </div>
+                  </div class='video-box'>  
                   </div>
                 </div>
               </div>
-            </div> -->
-            <div class="feature-li-content1">
+            </div>
+            <!-- <div class="feature-li-content1">
               <div class="feature-li">
                 <div class="feature-text-block">
+                 
                   <div class="feature-text-content-block">
                     <div class="feature-box">
                       <div class="feature-title">5G网络支持</div>
@@ -326,7 +333,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="feature-li-content2">
               <div class="feature-li inverse">
                 <div class="feature-text-block">
