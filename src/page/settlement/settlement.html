@@ -16,18 +16,18 @@
         <div class="img">
           <img
             class="v-center h-center"
-            src="https://e.vip.com/assets/img/flying.jpg"
+            src="${require('../../img/settlement/settlement_banner.png')}"
           />
         </div>
         <div class="slide-mask"></div>
         <div class="slide-content v-center h-center">
-          <div class="content-title-lg">用户洞察</div>
+          <div class="content-title-lg">灵活多样的计费支持</div>
           <div class="content-desc">
             <p>
-              通过在多渠道采集用户行为数据，分析用户偏好，构建体系化用户标签集，输出精准、丰满的用户画像，为精细化运
+              通过追踪订购触发、解析内容播放占比，实现内容提供商结算与用户行为的直接挂钩，引导合作伙伴加大受欢迎
             </p>
             <p>
-              营和精准营销夯实基础实力。
+              的内容投放、提升内容品质、创先内容注入，提高结算分成的同时提升品牌竞争优势。
             </p>
           </div>
         </div>
@@ -40,16 +40,25 @@
                 <!-- <div class="bg-shadow"></div> -->
                 <div class="feature-text-content-block">
                   <div class="feature-box">
-                    <div class="feature-title">丰富用户画像</div>
+                    <div class="feature-title">
+                      <div class="feature-title-text">
+                        主推融合包
+                      </div>
+                      <div class="feature-title-text">
+                        按用户行为细算收入分成
+                      </div>
+                    </div>
                     <div class="feature-desc">
-                      利用大数据、AI等新技术，对2000万个人用户、700万家庭用户在北京移动大小屏收视中产生的海量数据进行深入建模分析，对用户属性、行为特征进行标签化识别，并不断对用户标签体系进行优化迭代，完善用户标签，目前累计已经输出**个用户标签，**个维度分析模型。
+                      打包各个合作方的流量型产品，组合形成影视、少儿、教育、体育、娱乐等多类融合包及全站包，并通过跟踪统计订购触发及内容观看等用户行为数据，实现按内容牵引及有效收视时长确定结算比例，让提供优质资源的合作方获得最大收益。
                     </div>
                   </div>
                 </div>
               </div>
               <div class="feature-img-block">
                 <div class="feature-img">
-                  <img src="${require('../../img/customer/customer-1.png')}" />
+                  <img
+                    src="${require('../../img/settlement/settlement_1.png')}"
+                  />
                 </div>
               </div>
             </div>
@@ -62,17 +71,25 @@
                 >
                   <div class="feature-box">
                     <div class="feature-title">
-                      定制用户行为报告
+                      <div class="feature-title-text">
+                        兼备单独计费模式
+                      </div>
+                      <div class="feature-title-text">
+                        助力合作方利润最大化
+                      </div>
                     </div>
-                    <div class="feature-desc">
-                      为合作方出具用户行为洞察报告，协助内容方及时根据市场和用户需求的变化调整业务重心、优化营销策略、优选目标受众，最大化市场影响力。
+                    <div class="feature-desc feature-desc-add">
+                      针对合作方的新热、独家资源和第三方平台应用，同时提供单独计费模式，将合作伙伴的优质内容最大化变现。
                     </div>
                   </div>
                 </div>
               </div>
               <div class="feature-img-block">
                 <div class="feature-img feature-img-left">
-                  <img src="${require('../../img/customer/customer-2.png')}" />
+                  <img
+                    id="settlement-2"
+                    src="${require('../../img/settlement/settlement_2.png')}"
+                  />
                 </div>
               </div>
             </div>
@@ -83,6 +100,5 @@
 
     <!--引入通用的底部栏-->
     <%=require('html-withimg-loader!../../html/tpl/footer.html')%>
-    <script src="./settlement.js"></script>
   </body>
 </html>

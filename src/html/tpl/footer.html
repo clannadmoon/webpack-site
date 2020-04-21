@@ -14,17 +14,31 @@
 <footer class="footer" id="footer">
   <div class="footer-inner">
     <div class="footer-info">
-      <!-- <p>
-        如想申请接入km 请联系邮箱：xxx 电话：xxxx
-      </p> -->
+      <p class="web-believe-text">
+        Copyright@1999-2020 中国移动 版权所有 本网站支持IPv6访问
+      </p>
 
-      <p class="footer-info-txt">
+      <p class="web-believe-text">
+        中华人民共和国增值电信业务经营许可证 经营许可证编号：A2.B1.B2-20100001
+      </p>
+
+      <div class="footer-detail">
+        <img class="web-believe-img" src="../../img/common/knetSealLogo.png" />
+
+        <img
+          class="web-believe-little-img"
+          src="../../img/common/img_beijing.png"
+        />
+        <span class="web-believe-text">京ICP备05002571号</span>
+      </div>
+
+      <!-- <p class="footer-info-txt">
         <a class="company-info" rel="nofollow" href="https://www.vip.com/"
           >如想申请接入km 请联系邮箱：xxx 电话：xxxx vipjr.com
         </a>
         Copyright © 2008-<span class="copy-right-end-year">2020</span>
         翻印必究 | 隐私保护 安全条款 服务条款 | 京ICP备11004351号
-      </p>
+      </p> -->
     </div>
   </div>
 </footer>
@@ -78,6 +92,8 @@
       "https://passport.vip.com/login?whereFrom=vipotd&src=" +
         encodeURIComponent(redirectUrl)
     ),
+    //移除请求报错
+    /*
     $.ajax({ url: "user/current", type: "GET", dataType: "json" })
       .done(function (e) {
         if (
@@ -96,6 +112,7 @@
       })
       .fail(function () {})
       .always(function () {}),
+      */
     $(".copy-right-end-year").text(new Date().getFullYear()),
     $(".logout-btn, .logout-btn-mobile").on("click", function () {
       $.get("/logout").done(function () {

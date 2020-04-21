@@ -20,8 +20,8 @@
     transform: translate(-50%, 0);
   }
   .page-section .page-content .page-left {
-    width: 40%;
-    max-width: 450px;
+    width: 50%;
+    max-width: 530px;
     display: inline-block;
     left: 0;
     height: 100%;
@@ -49,7 +49,9 @@
     font-size: 40px;
     color: #ffffff;
     letter-spacing: 2.29px;
+    margin: 0 0 0.5rem 0;
   }
+
   .page-section .page-title-lg.inverse {
     color: #333;
 
@@ -57,28 +59,35 @@
     align-items: flex-end;
 
     .title_label_img {
-      width: 48px;
-      height: 58px;
-      margin-right: 10px;
+      width: 2.4rem;
+      height: 2.9rem;
+      margin-right: 0.5rem;
       position: relative;
-      top: -14px;
+      top: -0.7rem;
     }
   }
 
-  .page-section .content-desc {
+  .page-section .page2-content-desc {
     font-family: PingFangSC-Regular;
     font-size: 0.9rem;
     color: #eaeaea;
     letter-spacing: 0;
-    line-height: 1.8rem;
+    line-height: 2rem;
   }
-  .page-section .content-desc.inverse {
-    color: #666;
+
+  .page-section .content-desc {
     font-family: PingFangSC-Regular;
-    font-size: 16px;
+    font-size: 0.8rem;
     color: #666666;
     letter-spacing: 0;
-    line-height: 40px;
+    line-height: 2rem;
+  }
+  .page-section .content-desc.inverse {
+    font-family: PingFangSC-Regular;
+    font-size: 0.8rem;
+    color: #666666;
+    letter-spacing: 0;
+    line-height: 2rem;
   }
   .page-section.page1 {
     height: 499px;
@@ -154,23 +163,30 @@
   }
   .page-section.page2 .page-fg {
     width: 100%;
-    padding-bottom: 5rem;
+    // padding-bottom: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
   }
   .page-section.page2 .page-content {
-    height: 298px;
+    height: 242px;
   }
   .page-section.page3 {
-    height: 480px;
+    height: 435px;
     background: #f7f7f7;
   }
   .page-section.page3 .page-content {
-    height: 480px;
+    height: 435px;
   }
   .page-section.page4 {
-    height: 477px;
+    height: 457px;
+    background-color: #fff;
   }
   .page-section.page4 .page-content {
-    height: 477px;
+    height: 457px;
   }
   .page-section.page4 img.img-slide {
     position: absolute;

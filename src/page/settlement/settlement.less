@@ -5,7 +5,7 @@
 @import "./animation.less";
 
 .banner-block {
-  height: 17rem;
+  height: 16.15rem;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -28,14 +28,19 @@
   animation: fadeIn 0.8s ease-in-out both;
 }
 .content-title-lg {
-  font-size: 2.5rem;
   text-align: center;
-  color: #fff;
+  font-family: PingFangSC-Regular;
+  font-size: 3.5rem;
+  color: #ffffff;
+  letter-spacing: 0;
 }
 .content-desc p {
-  font-size: 22px;
-  color: rgba(255, 255, 255, 0.851);
-  line-height: 1.818;
+  font-family: PingFangSC-Regular;
+  font-size: 0.9rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 1.8rem;
   text-align: center;
   -webkit-animation: fadeIn 0.8s ease-in-out both;
   animation: fadeIn 0.8s ease-in-out both;
@@ -56,20 +61,23 @@
 .feature-li-content1 {
   height: auto;
   width: 100%;
-  background: #f7f7f7;
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(
+    180deg,
+    rgba(252, 252, 252, 0) 53%,
+    #efefef 100%
+  );
 }
 .feature-li-content2 {
   height: auto;
   margin: 0 auto;
-  // opacity: 0.7;
-  background-color: #fff;
-  //   background-image: linear-gradient(
-  //     180deg,
-  //     rgba(252, 252, 252, 0) 44%,
-  //     #e5e5e5 100%
-  //   );
+  //opacity: 0.7;
+  background-image: linear-gradient(
+    180deg,
+    rgba(252, 252, 252, 0) 44%,
+    #e5e5e5 100%
+  );
 
   display: flex;
   justify-content: center;
@@ -191,16 +199,20 @@
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .feature-title {
-  font-size: 1.3rem;
-  text-align: left;
+  text-align: center;
   margin: 1rem 0;
   font-family: PingFangSC-Regular;
   font-size: 1.8rem;
   color: #333333;
   letter-spacing: 0;
+
+  .feature-title-text {
+    line-height: 2.5rem;
+  }
 }
 .feature-desc {
   max-width: 500px;
@@ -210,6 +222,11 @@
   text-align: left;
   font-family: PingFangSC-Regular;
 }
+
+.feature-desc-add {
+  max-width: 460px;
+}
+
 .feature-img-block {
   opacity: 0;
   width: 100%;
@@ -243,6 +260,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  #settlement-1 {
+    width: 33.55rem;
+    height: 25.85rem;
+  }
+  #settlement-2 {
+    width: 32.55rem;
+    height: 18.65rem;
+  }
 }
 
 .feature-img-left {
